@@ -1,0 +1,66 @@
+#banner{
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: black;
+    height: 250px;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+}
+
+#logo{
+    background-color: white;
+    border-style: solid;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    position: absolute;    
+    top: 8px;
+    right: 770px;
+}
+
+#fondo{
+
+    background-color: green;
+    color:transparent;
+    height: 50px;
+    width: 750px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+#article{
+    
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: black;
+    height: 400px;
+    width: 450px;
+    text-align: center;
+    align-items: center;
+
+}
+
+#aside{
+    position: absolute;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    right: 755px;
+    top: 317.5px;
+}
+
+#Foot{
+    background-color: yellow;
+    color: transparent;
+    height: 50px;
+    width: 750px;
+    border-style: solid;
+    border-color:black ;
+}
