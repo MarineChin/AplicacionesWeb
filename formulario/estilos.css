@@ -1,0 +1,33 @@
+body{
+    border:  5px;
+    padding: 6px;
+    align-items: center;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url(https://static.vecteezy.com/system/resources/previews/009/095/899/non_2x/lime-green-gradient-abstract-background-background-dark-pattern-blur-empty-green-gradient-studio-well-for-background-website-template-frame-business-report-free-vector.jpg);
+}
+
+#titulo{
+    text-align: center;
+}
+
+form{
+
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form .date-selects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+label{
+    display:inline-block;
+}
+

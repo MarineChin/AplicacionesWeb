@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario basico</title>
+</head>
+<body>
+
+<form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" required><br><br>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required><br><br>
+
+    <label for="tiempo">Tiempo:</label>
+    <input type="time" id="tiempo" name="tiempo" required><br><br>
+
+    <label for="fecha-hora">Fecha y Hora:</label>
+    <input type="datetime-local" id="fecha-hora" name="fecha-hora" required><br><br>
+
+    <label for="mes">Mes:</label>
+    <input type="month" id="mes" name="mes" required><br><br>
+
+    <label for="semana">Semana:</label>
+    <input type="week" id="semana" name="semana" required><br><br>
+
+    <label for="numero">Número (de -10 a 10):</label>
+    <input type="number" id="numero" name="numero" min="-10" max="10" required><br><br>
+
+    <label for="telefono">Teléfono (10 dígitos):</label>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required><br><br>
+
+    <label for="busqueda">Término de Búsqueda:</label>
+    <input type="search" id="busqueda" name="busqueda" required><br><br>
+
+    <label for="color">Color Favorito:</label>
+    <input type="color" id="color" name="color" required><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
