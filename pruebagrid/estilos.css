@@ -1,0 +1,28 @@
+body{
+  background-color: cornsilk;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .photocard {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .photocard img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #titulo{
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
