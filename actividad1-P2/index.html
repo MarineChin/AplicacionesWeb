@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/dom.js">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <p id="demo"></p>
+    <script> 
+    document.getElement("demo").innerHTML="Hola Mundo";
+    </script>
+    <p id="intro">ola</p>
+    <script>
+        const elemento = document.getElementById("intro");
+    </script>
+
+    <h1 id="enca">Encabezado viejin</h1>
+    
+    <script>
+        const title = document.getElementById("enca");
+        title.innerHTML="NUEVO ENCABEZADO";
+    </script>
+    <p id="p1">Hola Mundo</p>
+    <script>
+    document.getElementById("p1"),innerHTML="¡NUEVO TEXTO!";
+    </script>
+
+    <p id="titulo">Encabezado viejo</p>
+    <script>
+        const EnTitulo = document.getElementById("titulo");
+        elemento.innerHTML="Nuevo encabezado"
+    </script>
+
+    <p>Holala</p>
+    <script>
+        const element = document.getElementsByName("p");
+    </script>
+
+    <p id="main">jojo</p>
+    <script>
+        const x = document.getElementById("main");
+        console.log(x);
+        const y = document.getElementsByName("p");
+        console.log(y);
+    </script>
+
+    <p class="intro">Ejemplo 1</p>
+    <p class="intro">Ejemplo 2</p>
+    <p class="intro">Ejemplo 3</p>
+    <p class="intro">Ejemplo 4</p>
+
+    <script>
+        const x1 = document.getElementsByClassName("intro");
+        console.log(x1);
+    </script>
+    <p class="intros">este es un ejemplo</p>
+    <p class="intros">este es otro ejemplo</p>
+    <script>
+        const i = document.querySelectorAll("p.intro");
+    </script>
+
+    <ul>
+        <li>Nayeon</li>
+        <li>Jeongyeon</li>
+        <li>Momo</li>
+        <li>Sana</li>
+        <li>Jihyo</li>
+        <li>Mina</li>
+        <li>Dahyun</li>
+        <li>Chaeyoung</li>
+        <li>Tzuyu</li>
+    </ul>
+    <script>
+        const listelement = document.querySelectorAll("ul > li");
+        console.log(listelement);
+    </script>
+
+    
+    <script>
+        const h1Element = document.querySelectorAll("h1");
+        console.log(h1);
+    </script>
+
+    <p class="list">Uno</p>
+    <p class="list">Dos</p>
+    <p class="list">Tres</p>
+
+    <script>
+        const list = document.querySelector(".list");
+        console.log(list);
+    </script>
+
+    <ul id="milista">
+        <li>Hola</li>
+        <li>como</li>
+        <li>estas</li>
+    </ul>
+
+    <script>
+        const listaDeElementos = document.querySelectorAll("ul > li")
+
+        listaDeElementos.forEach((item) => {
+        console.log(item);
+    });
+    </script>
+    
+    <script>
+        const h1 = document.querySelector("h1");
+        h1.style.color="blue";
+    </script> 
+
+    <form id="frm1">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+    
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+    
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        const formu = document.forms["frm1"];
+        let texto = "";
+        for(let i=0; i< x.length; i++){
+            texto += x.elements [i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = texto;
+        console.log(formu);
+    </script>
+
+    <ul id="lista">
+        <li>keso</li>
+        <li>jamon</li>
+    </ul>
+    <script>
+        let lista = document.createElement ("ul");
+        document.body.appendChild(lista);
+
+        let Elemento1 = document.createElement("li");
+        Elemento1.textContent ="Flor"; 
+        lista.appendChild(Elemento1);
+
+        let Elemento2 = document.createElement("li");
+        Elemento2.textContent ="Jaguar"; 
+        lista.appendChild(Elemento2);
+    </script>
+
+    <button id="Boton">Presiona</button>
+    <script>
+        const button = document.getElementById("Boton");
+        button.addEventListener("click", () => {
+            alert("Teamo hyo");
+        });
+    </script>
+    <br><br>
+    <form id="miformulario" method="Post" onsubmit="return validarFormulario()">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        function validarFormulario(){
+            let f = document.forms["miformulario"]["name"].value;
+            if(f === ""){
+                alert("PON TU NOMBRE MENSIS");
+                return false;
+            }
+        }
+    </script>
+    <label for="numero">Número:</label>
+    <input type="text" id="numero" name="numero">
+
+    <button type="button" onclick="return validarNumero()">Validar</button>
+
+    <p id="demoe"></p>
+    <script>
+        document.getElementById("demoe").innerHTML = "fecha" + Date();
+    </script>
+      
+<script>
+    function validarNumero(){
+        let n = document.getElementById("numero").value;
+        let texto;
+
+        if (isNaN(n) || n < 1 || n > 10){
+            texto = "No válido";
+        } else {
+            texto = "Válido";
+        }
+
+        document.getElementById("demo").innerHTML = texto;
+
+        return false;
+    }   
+ </script>
+
+ <script>
+    function validacion(){
+        let d = document.forms["frm1"] ["profesion"].value;
+            if(d === ""){
+                alert("no pasas pa , llena todos los campos");
+                return false;
+            }
+            return true;
+    }
+
+   </script>
+ <img src="jihyobbsita.jpg" height="250" id="Miimagen"><br>
+
+ <script>
+   document.getElementById("Miimagen").src = "jihyobbsita.jpg";
+ </script>
+ 
+
+</body>
+</html>
