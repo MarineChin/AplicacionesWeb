@@ -1,40 +1,28 @@
 version: "3"
 
 services:
-  mariadb:
+  database:
     container_name: mariadb
     image: mariadb:jammy
-    restart: always
     ports:
       - 3306:3306
     volumes:
-      - ./data:/var/lib/mysql
+      - BdPostgres-Mio:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=datab
-      - MYSQL_USER=irenechin119@gmail.com
-      - MYSQL_PASSWORD=12345
+      - MYSQL_ROOT_PASSWORD=12345
 
   phpmyadmin:
+    depends_on:
+      - database
     container_name: phpmyadmin
-    image: phpmyadmin/phpmyadmin
-    restart: always
+    image: phpmyadmin:5.2.1-apache
+    volumes:
+      - ./phpmyadmin:/var/www/html
     ports:
       - 8080:80
     environment:
-      - PMA_HOST=mariadb
+      - PMA_HOST=database
       - PMA_PORT=3306
-      - PMA_ARBITRARY=1
 
-  pgAdmin:
-    depends_on:
-      - mariadb
-    container_name: pgAdmin1
-    image: dpage/pgadmin4:7.3
-    ports:
-      - 8083:80
-    volumes:
-      - ./pgAdmin:/var/lib/pgadmin
-    environment:
-      - PGADMIN_DEFAULT_PASSWORD=12345
-      - PGADMIN_DEFAULT_EMAIL=irenechin119@gmail.com
+volumes:
+  BdPostgres-Mio:
