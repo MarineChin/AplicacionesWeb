@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1 id="titulo">R E G I S T R O</h1>
+    
+    <form id="form">
+
+        <label for="Apellidos">Apellidos: </label>
+        <input type="text" id="Apellidos" name="Apellidos" placeholder="Apellidos" required><br> <br>
+
+        <label for="Nombre">Nombre: </label>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Solo nombre" required><br> <br>
+
+        <label for="dia">Fecha de nacimiento: </label>
+        <input type="number" id="dia" name="dia" min="1" max="31" placeholder="Día" required> 
+
+        <input type="number" id="mes" name="mes" min="1" max="12" placeholder="Mes" required> 
+
+        
+       <!--<select>
+            <option value="opcion1">Enero</option>
+            <option value="opcion2">Febrero</option>
+            <option value="opcion3">Marzo</option> 
+            <option value="opcion4">Abril</option>
+            <option value="opcion5">Mayo</option>
+            <option value="opcion6">Junio</option>  
+            <option value="opcion7">Julio</option>
+            <option value="opcion8">Agosto</option>
+            <option value="opcion9">Septiembre</option> 
+            <option value="opcion10">Octubre</option>
+            <option value="opcion11">Noviembre</option>
+            <option value="opcion12">Diciembre</option> 
+       </select>-->
+
+        <input type="number" id="a" name="a" min="1900" max="2023" placeholder="Año" required> <br> <br>
+
+        <label for="ciudad"> Ciudad de nacimiento: </label>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad de nacimiento" required> <br> <br>
+
+        <label for="pais">País de nacimiento: </label>
+
+        <select>
+            <option value="opcion1">Argentina</option>
+            <option value="opcion2">Chile</option>
+            <option value="opcion3">Colombia</option> 
+            <option value="opcion4" selected >México</option>
+            <option value="opcion5">Ecuador</option>
+ 
+       </select> <br><br>
+
+       <label for="nacionalidad">Nacionalidad: </label>
+
+        <select>
+            <option value="opcion1">Argentino/a</option>
+            <option value="opcion2" selected >Chileno/a</option>
+            <option value="opcion3">Colombiano/a</option> 
+            <option value="opcion4">Méxicano/a</option>
+            <option value="opcion5">Ecuatoriano/a</option>
+
+        </select> <br><br>
+
+        <label for="pass">Número de Pasaporte: </label>
+        <input type="text" id="pass" name="pass" placeholder= "Número de Pasaporte" required> <br><br>
+
+        <label for="pais">País de emisión del pasaporte: </label>
+
+        <select>
+            <option value="opcion1">Argentina</option>
+            <option value="opcion2">Chile</option>
+            <option value="opcion3">Colombia</option> 
+            <option value="opcion4">México</option>
+            <option value="opcion5">Ecuador</option>
+ 
+       </select> <br><br>
+
+       <label for="dia">Fecha de emision del pasaporte: </label>
+       <input type="number" id="dia2" name="dia2" min="1" max="31" placeholder="Día" required> 
+       <input type="number" id="mes2" name="mes2" min="1" max="12" placeholder="Mes" required> 
+       <input type="number" id="a2" name="a2" min="1900" max="2023" placeholder="Año" required> <br> <br>
+
+
+       <label for="dia">Fecha de vencimiento del pasaporte: </label>
+       <input type="number" id="dia3" name="dia3" min="1" max="31" placeholder="Día" required> 
+       <input type="number" id="mes3" name="mes3" min="1" max="12" placeholder="Mes" required> 
+       <input type="number" id="a3" name="a3" min="1900" max="2023" placeholder="Año" required> <br> <br>
+
+       <input type="submit" value="Guardar">
+        
+    </form>
+
+</body>
+</html>
