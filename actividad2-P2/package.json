@@ -1,0 +1,12 @@
+{
+  "name": "actividad2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css sass/custom.css --content index.html --output sass/reducido.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
