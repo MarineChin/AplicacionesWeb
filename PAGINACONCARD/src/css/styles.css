@@ -1,0 +1,29 @@
+  .carousel-inner{
+    box-shadow: #b61a1a;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+  .card {
+    max-width: 400px; /* Ajusta el tamaño máximo de la card según tus necesidades */
+    margin: 3 auto; /* Centra la card horizontalmente */
+    background-color: aliceblue;
+
+  }
+
+  .carousel-item img {
+    max-height: 200px; /* Ajusta la altura máxima de las imágenes del carrusel según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor sin deformarse */
+  }
+.card2 {
+  max-width: 100px;
+  object-fit: none;
+  border-radius: 30%;
+}
+.card3 {
+  max-width: 100px;
+  object-fit: none;
+  border-radius: 30%;
+  align-items: center;
+  margin: 0 auto;
+}
